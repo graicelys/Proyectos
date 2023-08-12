@@ -1,0 +1,187 @@
+/* HEADER*/
+.header-container {
+  display: flex;
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Centra horizontalmente */
+  max-height: 300px;
+  overflow-y: auto;
+  border-radius: 50px 50px 0px 0px; /* Bordes inferiores redondeados */
+  padding: 10px;
+  background-color: #dbdada;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.header-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #dbdada;
+  border-radius: 0px;
+  transform: translateZ(-10px);
+  z-index: -1;
+}
+
+.header-container h2 {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  background: #6a97ff;
+  border-radius: 5px;
+  color: #fff;
+}
+
+/* CHAT CONTAINER */
+.chat-form-container {
+  display: flex;
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Centra horizontalmente */
+  max-height: 300px;
+  overflow-y: auto;
+  border-radius: 0px 0px 50px 50px; /* Bordes inferiores redondeados */
+  padding: 10px;
+  background-color: #dbdada;
+  transform-style: preserve-3d;
+  perspective:500px; /*Ajusta el tamaño de fuente según tus necesidades */
+}
+.chat-form-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #dbdada;
+  border-radius: 0px;
+  transform: translateZ(-10px);
+  z-index: -1;
+}
+
+.chat-form-contentuser {
+  width: 100%; /* Ajusta el valor según tus necesidades */
+  max-height: calc(100% - 80px); /* Resta el espacio ocupado por el encabezado y los botones de envío */
+  padding: 10px; /* Ajusta el tamaño del padding según tus necesidades */
+  margin-bottom: 10px; /* Ajusta el valor según tus necesidades */
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  /*background: #6a97ff;*/
+  /*border-radius: 5px;*/
+  /*color: #fff;*/
+}
+
+.chat-form-submit {
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px; /* Ajusta el valor según tus necesidades */
+  align-self: center; /* Centra verticalmente */
+  justify-self: center; /* Centra horizontalmente */
+  background: #3f70e1;
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  /*background: #6a97ff;*/
+  /*border-radius: 5px;*/
+  /*color: #fff;*/
+}
+
+/* MESSAGE */
+.message-container {
+  flex-grow: 1;
+  max-height: calc(100% - 100px); /* Resta el espacio ocupado por el encabezado y el formulario */
+  overflow-y: auto;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  padding: 10px;
+  position: relative; /* Ajusta el valor según tus necesidades */
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  margin-top: -10px; /* Ajusta el valor según tus necesidades */
+  background-color: #93a4c4;
+
+}
+
+/* Resto de estilos del contenedor y alertas */
+
+/* Estilos personalizados para la barra de desplazamiento */
+.sidebar {
+  width: 200px; /* Ancho de la barra lateral */
+  background-color: #93a4c4;
+  padding: 10px;
+  float: left;
+  overflow-y: auto; /* Añade una barra de desplazamiento vertical si el contenido excede el tamaño de la barra lateral */
+}
+
+/* Estilos personalizados para la barra de desplazamiento de la barra lateral */
+.sidebar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: #bdb7fb;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background:#bdb7fb;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: #857bf4;
+}
+
+.alert-primary {
+  border-radius: 10px;
+  margin-right: 70px; /* Ajusta el valor según tus necesidades */
+  margin-left: 15px; /* Ajusta el valor según tus necesidades */
+  background: #6a97ff;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0,0.2);
+}
+
+.alert-secondary {
+  border-radius: 10px;
+  margin-right: 15px; /* Ajusta el valor según tus necesidades */
+  margin-left: 70px; /* Ajusta el valor según tus necesidades */
+  background: #ffb379;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0,0.2);
+}
+
+
+/* Estilos personalizados para la barra de desplazamiento */
+.message-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.message-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.message-container::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.message-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.image-container-user {
+  float: right;
+  margin-left: 10px; /* Ajusta el valor según tus necesidades */
+}
+
+.image-container-laika{
+  float: left;
+  margin-left: 10px;
+}
+.hasta-aqui{
+  background-color: #ffffff00;
+  
+  /*hola*/
+}
