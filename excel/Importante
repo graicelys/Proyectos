@@ -1,0 +1,2 @@
+En el siguiente link es para instalar por composer la libreria de phpspreadsheet, para el programa:
+composer require phpoffice/phpspreadsheet
