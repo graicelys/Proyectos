@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <!--Bootstrap and style-->
+    <link rel="stylesheet" href="style/css/bootstrap.min.css">
+</head>
+<body>
+
+    <!--navbar-->
+    <!--Nota navbar navbar-expand-lg navbar-light bg-light-->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FDEBD0;">
+        <a class="navbar-brand" href="index.html">
+            <img src="style/img/simbolo/Logo simbolo.png" width="40" height="40" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="Quienes Somos.html">Quienes Somos</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="Contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="Restaurantes.html">Locales</a>
+              </li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                Menú
+              </a>
+              <div class="dropdown-menu" style="background-color: #FDEBD0;">
+                <a class="dropdown-item" href="menu/sopas.html">Sopas</a>
+                <a class="dropdown-item" href="menu/cremas.html">Cremas</a>
+                <a class="dropdown-item" href="menu/carne.html">Carnes</a>
+                <a class="dropdown-item" href="menu/pollo.html">Pollo</a>
+                <a class="dropdown-item" href="menu/pescado.html">Pescados</a>
+                <a class="dropdown-item" href="menu/postre.html">Postres</a>
+                <a class="dropdown-item" href="menu/bebida.html">Bebidas</a>
+              </div>
+            </li> 
+    </nav>  
+
+  
+    <img src="style/img/contacto/contacto.jpg" class="w-100" style="height: 320px;" alt="pc">
+    
+    <!-- Formulario de contacto-->
+    <div class="alert text-center" role="alert" style="margin: 15px; background-color: #FDF8D0;" >
+      Recuerda rellenar todos los campos y el número de teléfono con código incluido (+57).
+    </div>
+    <form action="form/submit_form.php" method="POST" class="p-2" style="background-color: #AED6F1; margin: 15px;">
+      <div class="form-row" style="margin: 20px;">
+        <div class="col">
+          <input type="text" name="name" id="name" class="form-control" placeholder="First name" required>
+        </div>
+        <div class="col">
+          <input type="text" name="lastname" id="lastname" class="form-control" placeholder="Last name" required>
+        </div>
+        <div class="col">
+          <input type="email" name="email" id="email" class="form-control" placeholder="Your email" required>
+        </div>
+      </div>
+      <div class="form-row" style="margin: 20px;">
+        <div class="col">
+          <input type="text" name="country" id="country" class="form-control" placeholder="Your country" required>
+        </div>
+        <div class="col">
+          <input type="phone" name="phone" id="phone" class="form-control" placeholder="Your phone with code" required>
+        </div>
+      </div>
+      <div class="form-row" style="margin: 20px;">
+        <div class="col">
+          <textarea class="form-control" name="message" id="message" placeholder="Your message" required></textarea>
+        </div>
+      </div>
+      <div class="form-row" style="margin: 20px;">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck1" required>
+          <label class="form-check-label" for="gridCheck1">
+            Agree to terms and conditions.
+          </label>
+        </div>
+        <div class="col">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </form>
+
+
+
+     <!-- Footer-->
+   <div class="text-center p-2" style="background-color: #FDEBD0"> 
+    <a href="#" class="badge badge-primary"> © 2023 Graicelys Volcán.</a>
+  </div>
+   <!--Bootstrap and js-->
+ <script src="style/js/jquery.min.js"></script>
+ <script src="style/js/bootstrap.min.js"></script>
+</body>
+</html>
